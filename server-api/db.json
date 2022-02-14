@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Max hello",
+      "email": "max@mail.com"
+    },
+    {
+      "id": "7066e74d-3344-4065-9d52-a907ca8dc1e6",
+      "name": "masha",
+      "email": "masha@mail.com"
+    },
+    {
+      "id": "ddfc1f44-e845-4315-9aaf-e7df38f8820b",
+      "name": "vcvcvc da kek",
+      "email": "xcxvxcv"
+    }
+  ]
+}

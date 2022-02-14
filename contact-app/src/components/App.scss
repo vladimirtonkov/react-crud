@@ -1,0 +1,294 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    margin-bottom: 30px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+
+.add-contact {
+    margin-bottom: 40px;
+
+    &__inner {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__field {}
+
+    &__field:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__input-data {
+        width: 100%;
+        padding: 12px 40px 12px 12px;
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 6px;
+        font-weight: 700;
+    }
+
+    &__input-data:focus {
+        border: 2px solid;
+    }
+
+    &__btn-contact {
+        background-color: blue;
+        color: #fff;
+        border-radius: 4px;
+        padding: 8px 12px;
+        transition: all .3s;
+    }
+
+    &__btn-contact:hover {
+        background-color: #000;
+    }
+}
+
+
+.contact-list {
+    &__items {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__btn-form_contact {
+        padding: 12px 14px;
+        color: #fff;
+        background-color: blue;
+        transition: all .3s;
+    }
+
+    &__btn-form_contact:hover {
+        background-color: #000;
+    }
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 20px 10px;
+    transition: all .3s;
+    margin-bottom: 10px;
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__info {
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+
+    &__name {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    &__email {
+        display: block;
+    }
+
+
+    &__btn-delete {
+        background-color: #fff;
+        padding: 0;
+    }
+
+    &__btn-edit {
+        margin-right: 10px;
+        background-color: #fff;
+    }
+
+    &__btn-img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+
+
+.user {
+
+    &__btn-home {
+        padding: 14px 12px;
+        background-color: green;
+        color: #fff;
+        transition: all .3s;
+        margin-bottom: 20px;
+    }
+
+    &__btn-home:hover {
+        background-color: #000;
+    }
+
+    &__inner {
+        max-width: 300px;
+        width: 100%;
+        // overflow: scroll;
+        margin: 0 auto;
+        border-bottom: 1px solid;
+        margin-bottom: 10px;
+    }
+
+    &__avatar {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    &__img-avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        padding-left: 20px;
+    }
+
+    &__name {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__email {
+        font-size: 20px;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    &__avatar--delete {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    &__content--center {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    &__wrapper {
+        text-align: center;
+    }
+
+
+    &__text {
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+
+    &__delete {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 12px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        transition: all .3s;
+    }
+
+    &__delete:hover {
+        background-color: red;
+    }
+
+    &__leave {
+        background-color: green;
+        color: #fff;
+        padding: 10px 12px;
+        text-transform: uppercase;
+        transition: all .3s;
+    }
+
+    &__leave:hover {
+        background-color: yellow;
+        color: #000;
+    }
+
+
+}
